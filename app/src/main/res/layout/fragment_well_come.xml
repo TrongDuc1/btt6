@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome"
+    android:theme="@style/ThemeOverlay.Btt2screen.FullscreenContainer"
+    tools:context=".fragmentscreen/FragmentWellCome">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="190dp"
+        android:layout_marginBottom="-80dp"
+        android:src="@drawable/monen"
+        >
+    </androidx.appcompat.widget.AppCompatImageView>
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:paddingTop="160dp"
+        android:paddingHorizontal="70dp"
+        android:text="Welcome to"
+        android:textColor="@color/black"
+        android:textSize="47sp"
+        android:textStyle="bold"
+        android:autoSizeMaxTextSize="@android:dimen/app_icon_size"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="70dp"
+        android:paddingTop="220dp"
+        android:text="FoodHub"
+        android:textColor="#FE724C"
+        android:textSize="40sp"
+        android:textStyle="bold">
+    </TextView>
+    <TextView
+        android:id="@+id/your"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/as"
+        android:textStyle="normal"
+        android:paddingTop="280dp"
+        android:paddingStart="70dp"
+        android:paddingEnd="100dp"
+        android:textColor="#30384F"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/gn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="sign in with"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/f"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+    <Button
+        android:id="@+id/s"
+        android:layout_width="139.26dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/fbgg"
+        android:text="FACEBOOK"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:drawableStart="@drawable/fb"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/f"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/f"
+        android:layout_width="139.26dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/fbgg"
+        android:text="GOOGLE"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:drawableStart="@drawable/gg"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/Signup"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/Signup"
+        android:layout_width="293dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonborder"
+        android:text="Start with email or phone"
+        android:textAllCaps="false"
+        android:textColor="#FEFEFE"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s"
+
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:text="Already have an account?"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Signup">
+    </TextView>
+    <TextView
+        android:id="@+id/textSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/dn"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/Signup">
+    </TextView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/thanhng"
+        app:layout_constraintBottom_toTopOf="@+id/s"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </ImageView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

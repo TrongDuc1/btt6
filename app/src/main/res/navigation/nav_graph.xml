@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentSplashscreen">
+
+    <fragment
+        android:id="@+id/fragmentOnBoardingone"
+        android:name="com.example.btt2screen.fragmentscreen.FragmentOnBoardingone"
+        android:label="FragmentOnBoardingone"
+        tools:layout="@layout/fragment_on_boardingone">
+        <action
+            android:id="@+id/action_fragmentOnBoardingone_to_fragmentOnBoardingtwo"
+            app:destination="@id/fragmentOnBoardingtwo" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentOnBoardingtwo"
+        android:name="com.example.btt2screen.fragmentscreen.FragmentOnBoardingtwo"
+        android:label="fragment_on_boardingtwo"
+        tools:layout="@layout/fragment_on_boardingtwo" >
+        <action
+            android:id="@+id/action_fragmentOnBoardingtwo_to_fragmentOnBoardingthree"
+            app:destination="@id/fragmentOnBoardingthree" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentOnBoardingthree"
+        android:name="com.example.btt2screen.fragmentscreen.FragmentOnBoardingthree"
+        android:label="fragment_on_boardingthree"
+        tools:layout="@layout/fragment_on_boardingthree" >
+        <action
+            android:id="@+id/action_fragmentOnBoardingthree_to_fragmentWellCome"
+            app:destination="@id/fragmentWellCome" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentWellCome"
+        android:name="com.example.btt2screen.fragmentscreen.FragmentWellCome"
+        android:label="fragment_well_come"
+        tools:layout="@layout/fragment_well_come" >
+        <action
+            android:id="@+id/action_fragmentWellCome_to_fragmentSignUp"
+            app:destination="@id/fragmentSignUp" />
+        <action
+            android:id="@+id/action_fragmentWellCome_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSignUp"
+        android:name="com.example.btt2screen.fragmentscreen.FragmentSignUp"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.example.btt2screen.fragmentscreen.FragmentLogin"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragmentLogin_to_tabView2"
+            app:destination="@id/tabView" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProfile"
+        android:name="com.example.btt2screen.fragmentscreen.FragmentProfile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_fragmentProfile_to_tabView"
+            app:destination="@id/tabView" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.example.btt2screen.fragmentscreen.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_fragmentHome_to_tabView"
+            app:destination="@id/tabView" />
+        <action
+            android:id="@+id/action_fragmentHome_to_movie_item_layout"
+            app:destination="@id/movie_item_layout" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSplashscreen"
+        android:name="com.example.btt2screen.FragmentSplashscreen"
+        android:label="fragment_splashscreen"
+        tools:layout="@layout/fragment_splashscreen" >
+        <action
+            android:id="@+id/action_fragmentSplashscreen_to_fragmentOnBoardingone"
+            app:destination="@id/fragmentOnBoardingone" />
+    </fragment>
+    <activity
+        android:id="@+id/tabView"
+        android:name="com.example.btt2screen.tabview.TabView"
+        android:label="activity_tab_view"
+        tools:layout="@layout/activity_tab_view" />
+    <fragment
+        android:id="@+id/nowPlaying"
+        android:name="com.example.btt2screen.fragmentscreen.NowPlaying"
+        android:label="NowPlaying" >
+        <action
+            android:id="@+id/action_nowPlaying_to_tabView"
+            app:destination="@id/tabView" />
+        <action
+            android:id="@+id/action_nowPlaying_to_movie_item_layout"
+            app:destination="@id/movie_item_layout" />
+    </fragment>
+    <fragment
+        android:id="@+id/movie_item_layout"
+        android:name="com.example.btt2screen.fragmentscreen.movie_item_layout"
+        android:label="movie_item_layout" />
+</navigation>
